@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/nm008_shoplist_bg"
+    android:layout_marginBottom="10dp">
+
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_width="150dp"
+        android:layout_height="106dp"
+        android:id="@+id/image_store"
+        android:background="#b0b2b7"
+        android:scaleType="centerCrop"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_toRightOf="@+id/image_store">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/shoplist_item_center_field">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textSize="16sp"
+                android:textColor="#3f4857"
+                android:id="@+id/text_store_name"
+                android:ellipsize="marquee"
+                android:layout_marginBottom="8dp"
+                android:maxEms="8"
+                android:maxLines="1"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:layout_marginRight="36dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:textColor="#883f4857"
+                android:id="@+id/text_store_description"
+                />
+        </LinearLayout>
+
+        <RatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_alignParentBottom="true"
+            android:progressDrawable="@drawable/ratingbar_progress"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:text=""
+            android:id="@+id/buttonLike"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:id="@+id/text_distance"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#883f4957"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout >

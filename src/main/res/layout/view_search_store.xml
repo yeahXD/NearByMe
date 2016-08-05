@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_store_search"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/btn_searchbar_bg"
+        android:paddingLeft="45dp"
+        android:paddingRight="50dp"/>
+
+    <Button
+        android:layout_width="53dp"
+        android:layout_height="26dp"
+        android:background="@drawable/btn_search"
+        android:id="@+id/btn_search"
+        android:layout_toRightOf="@+id/edit_store_search"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="74dp"
+        android:layout_height="26dp"
+        android:id="@+id/btn_order"
+        android:layout_toRightOf="@+id/btn_search"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/btn_gradelist"
+        android:visibility="visible"
+        android:clickable="true"/>
+
+    <ImageView
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="74dp"
+        android:layout_height="26dp"
+        android:id="@+id/btn_order2"
+        android:layout_toRightOf="@+id/btn_search"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/btn_reviewlist"
+        android:visibility="gone"
+        android:clickable="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kr.nearbyme.nbm.MapFragment"
+    android:id="@+id/container"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:background="@drawable/nm_006_button_cancel"
+        android:id="@+id/btn_close"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="17dp"/>
+
+
+
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@drawable/nm_006_p_setting"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="31dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="51dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="59dp"
+            android:layout_marginStart="59dp">
+
+            <RadioButton
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="54dp"
+                android:layout_height="31dp"
+                android:id="@+id/btn_presentloc"
+                android:button="@null"
+                android:background="@drawable/map_mylocation_selector"
+                />
+
+            <RadioButton
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="61dp"
+                android:layout_height="31dp"
+                android:id="@+id/btn_setloc"
+                android:layout_marginLeft="79dp"
+                android:layout_marginStart="79dp"
+                android:button="@null"
+                android:background="@drawable/map_setlocation_selector"/>
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="122dp"
+        android:layout_height="0.3dp"
+        android:id="@+id/image_line"
+        android:background="@drawable/nm_006_line"
+        android:layout_marginTop="71dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@drawable/nm_006_r_setting"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="58dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_radius"
+            android:layout_gravity="center">
+            <RadioButton
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:id="@+id/btn_one"
+                android:background="@drawable/radius_select1"
+                android:button="@null"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:checkable="true"
+
+                />
+
+
+            <RadioButton
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/radius_select3"
+                android:button="@null"
+                android:id="@+id/btn_three"
+                android:checkable="true"
+                />
+
+            <RadioButton
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:button="@null"
+                android:id="@+id/btn_five"
+                android:background="@drawable/radius_select5"
+                android:checkable="true"
+
+                />
+
+            <RadioButton
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/radius_select10"
+                android:button="@null"
+                android:id="@+id/btn_ten"
+                android:checkable="true"
+
+                />
+
+
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="91dp"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:background="@drawable/nm_006_button_done"
+        android:id="@+id/button_done"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
